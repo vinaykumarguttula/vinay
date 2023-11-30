@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>complete responsive flower website design tutorial</title>
+    <link rel="stylesheet" href="./FlowersShop.css">
+
+    <!-- font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <!-- header section -->
+    <header>
+
+        <input type="checkbox" name="" id="toggler">
+        <label for="toggler" class="fas fa-bars"></label>
+        <a href="#" class="logo">flower<span>.</span></a>
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#about">about</a>
+            <a href="#products">products</a>
+            <a href="#review">review</a>
+            <a href="#contact">contact</a>
+        </nav>
+
+        <div class="icons">
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-shopping-cart"></a>
+            <a href="#" class="fas fa-user"></a>
+        </div>
+    </header>
+
+    <!-- home section -->
+    <section class="home" id="home">
+        <div class="content">
+            <h3>fresh flowers</h3>
+            <span>natural & beautiful flowers</span>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae iste inventore asperiores. Commodi repellat neque est molestias quod quas nisi facilis? Nam, culpa cumque. Esse rem nostrum accusamus atque libero!</p>
+            <a href="#" class="btn">shop now</a>
+        </div>
+
+
+    </section>
+
+    <!-- about section starts -->
+    <section class="about" id="about">
+        <h1 class="heading"><span>about</span> us</h1>
+        <div class="row">
+            <div class="video-container">
+                <video src="https://player.vimeo.com/external/435661721.sd.mp4?s=108e8f44a1490504b41a794ad28f6af3dc90c920&profile_id=164&oauth2_token_id=57447761" loop autoplay muted></video>
+                <h3>best flower sellers</h3>
+
+            </div>
+
+            <div class="content">
+                <h3>why choose us?</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quae hic, eos quas obcaecati, atque dolorem omnis error id mollitia illo saepe vero tenetur consequuntur iure fugiat sunt maiores dolore!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse dolorum architecto inventore debitis illo exercitationem magni nobis quisquam dolorem soluta?</p>
+                <a href="#" class="btn">learn more</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- icons section -->
+    <section class="icons-container">
+        <div class="icons">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRK1d-6jodOLcRft_rq3W_0f7lzgwaXIH4HrQ&usqp=CAU" alt="">
+            <div class="info">
+                <h3>free delivery</h3>
+                <span>on all orders</span>
+            </div>
+        </div>
+
+        <div class="icons">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1pDKc0ef-tv4EZuoOLYC5_44Z9kM5Brbpzg&usqp=CAU" alt="">
+            <div class="info">
+                <h3>10 days returns</h3>
+                <span>moneyback guarantee</span>
+            </div>
+        </div>
+
+        <div class="icons">
+            <img src="data:image/png;base64,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" alt="">
+            <div class="info">
+                <h3>offer & grifts</h3>
+                <span>on all orders</span>
+            </div>
+        </div>
+
+        <div class="icons">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaEZcQSj55IiqMj6g99Py0MLKaILkN9hxCyg&usqp=CAU" alt="">
+            <div class="info">
+                <h3>secure payments</h3>
+                <span>protected by paypal</span>
+            </div>
+        </div>
+
+
+    </section>
+
+    <!-- products section -->
+    <section class="products" id="products">
+        <h1 class="heading"> latest <span>products</span> </h1>
+
+        <div class="box-container">
+            <div class="box">
+                <span class="discount">-10%</span>
+                <div class="image">
+                    <img src="https://media.gettyimages.com/id/1392618849/photo/autumn-chrysanthemum-flowers-close-up-of-potted-plant-against-white-background.jpg?s=612x612&w=0&k=20&c=A5cAeTisfGpSDn8CgTAY_0fgeZtpYIMXmibSzPMMnXM=" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="cart-btn">add to cart</a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>flower pot</h3>
+                    <div class="price"> $12.99 <span>$15.99 </span></div>
+                </div>
+            </div>
+
+            <div class="box">
+                <span class="discount">-15%</span>
+                <div class="image">
+                    <img src="https://media.gettyimages.com/id/155391280/photo/potted-plant-bright-red-gerbera-daisy.jpg?s=612x612&w=0&k=20&c=P7RHQB8-4D0J6QbecDpP0omZG6kOp4sjOcPrRZZzft4=" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="cart-btn">add to cart</a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>flower pot</h3>
+                    <div class="price"> $12.99 <span>$15.99 </span></div>
+                </div>
+            </div>
+
+            <div class="box">
+                <span class="discount">-5%</span>
+                <div class="image">
+                    <img src="https://contentgrid.thdstatic.com/hdus/en_US/DTCCOMNEW/fetch/FetchRules/PLP_Banner_PartialGroup/Outdoors/woven-planters-visnav-plp-banner.jpg" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="cart-btn">add to cart</a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>flower pot</h3>
+                    <div class="price"> $12.99 <span>$15.99 </span></div>
+                </div>
+            </div>
+
+            <div class="box">
+                <span class="discount">-20%</span>
+                <div class="image">
+                    <img src="https://media.gettyimages.com/id/184373587/photo/flower-in-woven-pot-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=yHSerRqhZc0rezUEnpJykshRpfbmGW2ipG21FPh3w3U=" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="cart-btn">add to cart</a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>flower pot</h3>
+                    <div class="price"> $12.99 <span>$15.99 </span></div>
+                </div>
+            </div>
+
+            <div class="box">
+                <span class="discount">-17%</span>
+                <div class="image">
+                    <img src="https://media.gettyimages.com/id/1366781024/photo/hanging-pot-of-geraniums-in-a-white-facade-of-a-typical-andalusian-street-in-castril-province.jpg?s=612x612&w=0&k=20&c=yh2MkPAvo13A30uqNgp4VvuL6gzIfDbqjPCxX2Wu_9w=" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="cart-btn">add to cart</a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>flower pot</h3>
+                    <div class="price"> $12.99 <span>$15.99 </span></div>
+                </div>
+            </div>
+
+            <div class="box">
+                <span class="discount">-3%</span>
+                <div class="image">
+                    <img src="https://media.gettyimages.com/id/183424956/photo/pink-roses-in-a-black-flower-pot-on-white-background.jpg?s=612x612&w=0&k=20&c=ucJwA1IRKOUxpXESqDJ7PnNqHiENw6uVbJyPNHqFEyY=" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="cart-btn">add to cart</a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>flower pot</h3>
+                    <div class="price"> $12.99 <span>$15.99 </span></div>
+                </div>
+            </div>
+
+            <div class="box">
+                <span class="discount">-18%</span>
+                <div class="image">
+                    <img src="https://media.gettyimages.com/id/114396954/photo/african-violet-flower-in-pot.jpg?s=612x612&w=0&k=20&c=2zGvhZs8yoEftnPe3T8sNXK-UBFv2Je-1UhPmjMgT14=" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="cart-btn">add to cart</a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>flower pot</h3>
+                    <div class="price"> $12.99 <span>$15.99 </span></div>
+                </div>
+            </div>
+
+            <div class="box">
+                <span class="discount">-5%</span>
+                <div class="image">
+                    <img src="https://media.gettyimages.com/id/164645276/photo/bottle-tree-in-bloom.jpg?s=612x612&w=0&k=20&c=oVwuLQdvk5w-k6dst3k6q7E-HBnTh_mfKP8e7UGDNkE=" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="cart-btn">add to cart</a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>flower pot</h3>
+                    <div class="price"> $12.99 <span>$15.99 </span></div>
+                </div>
+            </div>
+
+            <div class="box">
+                <span class="discount">-10%</span>
+                <div class="image">
+                    <img src="https://media.gettyimages.com/id/171105852/photo/pot-with-red-tulips.jpg?s=612x612&w=0&k=20&c=rUaey16oBkx9ZJYSOXkiz0BOL1oHd00J8rBdFQ8hBJw=" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="cart-btn">add to cart</a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>flower pot</h3>
+                    <div class="price"> $12.99 <span>$15.99 </span></div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- review section -->
+    <section class="review" id="review">
+        <h1 class="heading"> customer's <span>review</span></h1>
+
+        <div class="box-container">
+            <div class="box">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt natus sequi illo reiciendis, eos provident quibusdam accusamus nobis, enim sed expedita animi ut iure, tenetur velit ad omnis voluptatem pariatur.</p>
+                <div class="user">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlaEwKMs9ExDiI84awqGmfdQeE57TfO3jEJg&usqp=CAU" alt="">
+                    <div class="user-info">
+                        <h3>john deo</h3>
+                        <span>happy customer</span>
+                    </div>
+                </div>
+                <span class="fas fa-quote-right"></span>
+            </div>
+
+            <div class="box">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt natus sequi illo reiciendis, eos provident quibusdam accusamus nobis, enim sed expedita animi ut iure, tenetur velit ad omnis voluptatem pariatur.</p>
+                <div class="user">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTe2oTh-3pFDy8qnvyNjVItpF496W6acE0HHA&usqp=CAU" alt="">
+                    <div class="user-info">
+                        <h3>Son Ye Jin</h3>
+                        <span>happy customer</span>
+                    </div>
+                </div>
+                <span class="fas fa-quote-right"></span>
+            </div>
+
+            <div class="box">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt natus sequi illo reiciendis, eos provident quibusdam accusamus nobis, enim sed expedita animi ut iure, tenetur velit ad omnis voluptatem pariatur.</p>
+                <div class="user">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQB9qVWzWeKPXKxFk6bWThg4vbUdROUP59O5w&usqp=CAU" alt="">
+                    <div class="user-info">
+                        <h3> Song Ji-Hyo</h3>
+                        <span>happy customer</span>
+                    </div>
+                </div>
+                <span class="fas fa-quote-right"></span>
+            </div>
+
+        </div>
+    </section>
+    <!-- contact section -->
+    <section class="contact" id="contact">
+
+        <h1 class="heading"> <span> contact </span> us </h1>
+
+        <div class="row">
+            <form action="">
+                <input type="text" placeholder="name" class="box">
+                <input type="text" placeholder="name" class="box">
+                <input type="number" placeholder="number" class="box">
+                <textarea name="" class="box" placeholder="message" id="" cols="30" rows="10"></textarea>
+                <input type="submit" value="send message" class="btn">
+            </form>
+
+            <div class="image">
+                <img src="https://img.freepik.com/free-vector/blooming-concept-illustration_114360-4245.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- footer section -->
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="#">home</a>
+                <a href="#">about</a>
+                <a href="#">products</a>
+                <a href="#">review</a>
+                <a href="#">contact</a>
+            </div>
+
+            <div class="box">
+                <h3>extra links</h3>
+                <a href="#">my account</a>
+                <a href="#">my order</a>
+                <a href="#">my favorite</a>
+            </div>
+
+            <div class="box">
+                <h3>locations</h3>
+                <a href="#">india</a>
+                <a href="#">USA</a>
+                <a href="#">japan</a>
+                <a href="#">france</a>
+            </div>
+
+            <div class="box">
+                <h3>contact info</h3>
+                <a href="#">+123-456-7890</a>
+                <a href="#">example@gmail.com</a>
+                <a href="#">mumbai, india - 400104</a>
+               <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQS7HsJBYvGQ1eO4htNbXDihOwpm0RG63c54A&usqp=CAU" alt="">
+            </div>
+        </div>
+        <div class="credit"> created by <span> mr. web designer </span> | all rights reserved </div>
+
+
+    </section>
+    
+</body>
+</html>

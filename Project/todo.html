@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <style>
+        *{
+    margin: 0;
+}
+body{
+    background:linear-gradient( #83a4d4,#b6fbff);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section{
+    height: 400px;
+    width: 400px;
+    background-color:rgb(9, 6, 6);
+    display: grid;
+    justify-content: center;
+    padding: 20px;
+
+}
+input{
+    width: 250px;
+    height: 30px;
+    padding: 5px;
+    font-size: 25px;
+    border-radius:  10px 0px 0px 10px;
+    box-shadow: 0 0 15px aqua;
+
+}
+button{
+    padding: 5px;
+    font-size: 25px;
+    margin-left: -6px;
+    border-radius:  0px 10px 10px 0px;
+    box-shadow: 0 0 10px aqua;
+
+
+}
+input:focus{
+    box-shadow: 3px 3px 10px;
+}
+button:hover{
+    box-shadow:  3px 3px 10px;
+}
+.input_data{
+    font-size: 30px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid;
+    color: #83a4d4;
+    padding: 5px;
+}
+.delete{
+    color: red;
+    cursor: pointer;
+}
+    </style>
+    
+
+    <section>
+        <div id="adding_data">
+        <input type="text" id="input" placeholder="write todo">
+        <button>Add</button>
+    </div>
+    <div id="data">
+
+
+    </div>
+    </section>
+
+
+
+    <script>
+        let input = document.querySelector('input')
+
+let btn = document.querySelector('button')
+let data = document.querySelector('#data')
+
+
+btn.onclick = function(){
+    if(input.value==''){
+        alert('enter something')
+    }else{
+        data.innerHTML += `<div class='input_data'>${input.value}
+            
+            <button class='del'><i class="fa-solid fa-trash delete"></i></button>
+            </div>`
+
+            var del = document.querySelectorAll('.del')
+
+
+            for(var i=0;i<del.length;i++){
+                del[i].onclick = function(e){
+                    this.parentNode.remove()
+                }
+
+                input.value =''
+            }
+
+
+    }
+}
+    </script>
+
+    
+    
+</body>
+</html>
