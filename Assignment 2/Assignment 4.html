@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h2>1.find the average of the array elements in the array.</h2>
+   <script>
+        function average(array){
+            var sum=0
+            for(i=0;i<array.length;i++){
+                sum+=array[i]
+            }
+            var avg = sum/array.length
+            return avg
+        }
+        var a=[1,2,3,4,5,6,7]
+        avg = average(a)
+        document.write(avg)
+   </script> 
+   <h2>2.find the sum of the even elements in the array.</h2>
+   <script>
+        var array=[1,2,3,4,5,6,7]
+            var sum = 0
+            for(i=0;i<array.length;i++){
+                if(array[i]%2==0){
+                    sum += array[i]
+                }
+            }
+        document.write(sum) 
+   </script>
+    <h2>3.find the sum of the odd elements in the array.</h2>
+    <script>
+        var array=[1,2,3,4,5,6,7]
+            var sum = 0
+            for(i=0;i<array.length;i++){
+                if(array[i]%2!==0){
+                    sum += array[i]
+                }
+            }
+        
+        document.write(sum) 
+    </script>
+    <h2>4.find the sum of the even index elements in the array.</h2>
+    <script>
+         var array=[1,2,3,4,5,6,7]
+        var sum =0
+            for(i=0;i<array.length;i+=2){
+                sum +=array[i]
+            }
+        document.write(sum)
+    </script>
+    <h2>5.find the sum of the odd index elements in the array.</h2>
+    <script>
+        var array=[1,2,3,4,5,6,7]
+        var sum =0
+            for(i=1;i<array.length;i+=2){
+                sum +=array[i]
+            }
+        document.write(sum)
+    </script>
+    <h2>6.find the average of the even elements in the array.</h2>
+    <script>
+        var array=[1,2,3,4,5,6,7]
+        var sum=0
+        var count=0
+        for(i=0;i<array.length;i++){
+            if(array[i]%2==0){
+                sum+=array[i]
+                count++
+            }
+        }
+        avg=sum/count
+        document.write(avg)
+    </script>
+    <h2>7.find the average of the odd elements in the array.</h2>
+    <script>
+        var array=[1,2,3,4,5,6,7]
+        var sum=0
+        var count=0
+        for(i=0;i<array.length;i++){
+            if(array[i]%2!==0){
+                sum+=array[i]
+                count++
+            }
+        }
+        avg=sum/count
+        document.write(avg)
+    </script>
+    <h2>8.find the average of the even index elements in the array.</h2>
+    <script>
+         var array=[1,2,3,4,5,6,7]
+        var sum=0
+        var count=0
+        for(i=0;i<array.length;i+=2){
+                sum+=array[i]
+                count++
+        }
+        avg=sum/count
+        document.write(avg)
+    </script>
+    <h2>9.find the average of the odd index elements in the array.</h2>
+    <script>
+        var array=[1,2,3,4,5,6,7]
+       var sum=0
+       var count=0
+       for(i=1;i<array.length;i+=2){
+               sum+=array[i]
+               count++
+       }
+       avg=sum/count
+       document.write(avg)
+   </script>
+   <h2>10.find the average of the array elements which are divisible by 5?</h2>
+   <script>
+        var array=[10,2,5,40,6,8,25]
+        var sum=0
+        var count=0
+        for(i=0;i<array.length;i++){
+            if(array[i]%5==0){
+                sum+=array[i]
+                count++
+            }
+        }
+        avg=sum/count
+       document.write(avg)
+   </script>
+   <h2>11.find the sum of the numbers in the array which are greater than5 and divisible by 4.</h2>
+   <script>
+        var array=[1,4,5,8,20,50,48]
+        var sum=0
+        for(i=0;i<array.length;i++){
+            if(array[i]>5 && array[i]%4==0){
+                sum+=array[i]
+            }
+        }
+       document.write(sum)
+   </script>
+   <h2>12.fine the average of the numbers which are divisible by 2,3 and 4.</h2>
+   <script>
+        var array=[12,16,20,24]
+        var sum=0
+        var count=0
+        for(i=0;i<array.length;i++){
+            if(array[i]%2==0 && array[i]%3==0 && array[i]%4==0){
+                sum+=array[i]
+                count++
+            }
+        }
+        avg=sum/count
+       document.write(avg)
+
+   </script>
+   <h2>13.find the sum of the number which are divisible by 4,8,10.</h2>
+   <script>
+        var a=[16,10,25,40,24,4,48]
+        var sum=0
+        for(i=0;i<a.length;i++){
+            if(a[i]%4==0 && a[i]%8==0 && a[i]%10==0){
+                sum+=a[i]
+            }
+        }
+        document.write(sum)
+   </script>
+   <h2>14.check in the given array start value and end value in the array are same not.</h2>
+   <script>
+        function check(array){
+            if(array.length==0){
+                return 'array is empty'
+            }
+            else if(array[0]==array[array.length-1]){
+                return 'Start value and End value are same'
+            }else{
+                return 'Start value and End value are not same'
+            }
+        }
+         var a=[1,2,3,4,5,6]
+         var b=check(a)
+         document.write(b +'<br><br>')
+
+         var a=[1,2,3,4,1]
+         var b=check(a)
+         document.write(b)
+   </script>
+   <h2>15.check the given array, how many even elements in the array.</h2>
+   <script>
+        var array=[1,2,3,4,5,6,7,8]
+        var count=0
+        for(i=0;i<array.length;i++){
+            if(array[i]%2==0){
+                count++
+            }
+        }
+        document.write(count)
+   </script>
+</body>
+</html>

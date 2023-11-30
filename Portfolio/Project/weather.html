@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        *{
+            margin: 0;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(120deg,rgb(212, 167, 76), rgb(59, 147, 59));
+
+        }
+        section{
+            width: 500px;
+            background-color: rgb(249, 243, 243);
+            text-align: center;
+            padding: 30px 15px;
+            line-height: 40px;
+            border-radius: 10px 150px;
+
+        }
+        input{
+            width: 250px;
+            padding: 5px;
+            font-size: 25px;
+            
+        }
+        button{
+            padding: 5px;
+            font-size: 25px;
+            margin-left: -10px;
+        }
+        img{
+            width: 150px;
+        }
+    </style>
+    
+<section>
+    <input type="text" id="input">
+    <button id="btn">Get</button>
+    <div>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhJZs9zk9ddQNoi-5jxoMhnD4atitE68QXnA&usqp=CAU" alt="">
+    <h1><span id="temp">25</span><span>&deg</span>C</h1>
+    <h2 id="des">Description</h2>
+    <h2 id="location">Location</h2>
+    </div>
+
+</section>
+
+
+
+<script>
+
+    let input=  document.getElementById('input')
+    let btn= document.getElementById('btn')
+    let tem = document.getElementById('temp')
+    let des = document.getElementById('des')
+    let loc = document.getElementById('location')
+
+
+    btn.onclick = function(){
+    if(input.value ==""){
+        alert('enter value')
+    }else{
+        locat = input.value
+        key = '97b0181dd7119292b25c2f3c92577201'
+        url = `https://api.openweathermap.org/data/2.5/weather?q=${locat}&appid=${key}`
+        fetch(url).then(res => res.json()).then(data=>{
+            const {name}= data
+            const {temp}=data.main
+            const {description}=data.weather[0]
+
+        loc.innerText = name
+        des.innerText = description
+
+        tem.innerHTML = Math.round( temp-272)
+        })
+
+       
+    }
+}
+</script>
+
+</body>
+</html>

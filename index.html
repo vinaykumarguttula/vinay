@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Assignment-1</title>
+</head>
+<body>
+    <h4>1.find the sum of two given numbers</h4>
+    <script>
+        function sum(a,b){
+           document.write(a+b)
+        }
+        sum(5,9)
+    </script>
+    <h4>2.find the division of two given numbers</h4>
+    <script>
+        function div(a,b){
+            document.write(a/b)
+        }
+        div(10,5)
+    </script>
+    <h4>3.find the average of given five numbers</h4>
+    <script>
+        function avgofnum(){
+            document.write(1+2+3+4+5/5)
+        }
+        avgofnum()
+    </script>
+    <h4>4.find the area of triangle for given data</h4>
+    <script>
+        function trianglearea(h,b){
+             document.write(h*b/2)
+        }
+        trianglearea(10,15)
+    </script>
+    <h4>5.find the area of circle fore given data</h4>
+    <SCript>
+        function circlearea(r){
+            document.write(3.14*r*r)
+        }
+        circlearea(2)
+    </SCript>
+    <h4>6.convert the given seconds into hours</h4>
+    <script>
+        function seconds(s){
+            document.write(s/3600)
+        }
+        seconds(360)
+    </script>
+    <h4>7.convert the given meters into milli meters</h4>
+  <script>
+      function meters(m){
+        document.write(m*1000)
+    }
+    meters(9)
+  </script>
+  <h4>8.convert given rupees into dollars?</h4>
+  <script>
+    function ruptodol(r){
+        document.write(0.012*r)
+    }
+    ruptodol(100)
+  </script>
+  <h4>9.find the simple interest for given data?</h4>
+  <script>
+    function si(p,m,r){
+        document.write(p*m*r/100)
+    }
+    si(50000,10,2)
+  </script>
+  <h4>10.check given number is even or odd?</h4>
+  <script>
+    function num(a){
+        if(a%2==0){
+            document.write(a + " " +"even" + " ")
+        }
+        else{
+            document.write(a +  " " +"odd" )
+        }
+    }
+    num(5)
+  </script>
+  <h4>11.check given number is positive or negative?</h4>
+  <script>
+    function num(n){
+        if(n>=0){
+            document.write(n + " " + "positive number")
+        }
+        else{
+            document.write(n + " " + "negative number")
+        }
+    }
+    num(-10)
+  </script>
+  <h4>12.check given number is divisible by 5 or not?</h4>
+  <script>
+    function num(n){
+        if(n%5==0){
+            document.write(n + " " + "  is div by 5")
+        }
+        else{
+            document.write(n + " " + " is not div by 5")
+        }
+    }
+    num(11)
+  </script>
+  <h4>13.check given number is divisible by 2,3 and 4 or not?</h4>
+  <script>
+    function num(n){
+        if(n%2==0 && n%3==0 && n%4==0){
+            document.write(n + " " + "  is div by 2,3 and 4")
+        }
+        else{
+            document.write(n + " " + " is not div by 2,3 and 4")
+        }
+    }
+    num(10)
+  </script>
+  <h4>14.check given year is leap year or not?</h4>
+  <script>
+    function year(y){
+        if((y%400==0) || (y%100!=0 && y%4==0)){
+             document.write(y +" " + " leap year")
+        }
+        else{
+            document.write(y +" " + " not a leap year")
+
+        }
+    }
+    year(2023)
+  </script>
+  <h4>15.check given data is valid date or not?</h4>
+  <script>
+    function date(num){
+        if(num>0 && num<=30){
+            document.write(num + " " + "given data is valid date")
+        }
+        else{
+            document.write(num + " " + "given data is not a valid date")
+
+        }
+    }
+    date(28)
+  </script>
+  <h4>16.check given character is vowel or not?</h4>
+  <script>
+        ch='d'
+        if(ch=='a' || ch=='e' || ch=='i' || ch=='o' || ch=='u' || ch=='A' || ch=='E' || ch=='I' || ch=='O' || ch=='U' ){
+            document.write(ch + " " + "character is vowel" )
+        }
+        else{
+            document.write(ch + " " + "character is not a vowel" )
+
+        }
+  </script>
+  <h4>17.check given character is space or not?</h4>
+  <script>
+    function space(char){
+     
+if (char==' ') {
+  document.write(char +' The character is a space.');
+} else {
+  document.write(char + ' The character is not a space.');
+}
+}
+space(' ')
+  </script>
+
+  <h4>18.print numbers from 1 to 100?</h4>
+  <script>
+    function prime(){
+    let count=0
+    let i,j
+    for(j=2;j<=100;j++){
+        for(i=1;i<=j;i++){
+            if(j%i==0)
+            count++
+        }   
+    if(count==2)
+    document.write(j + " ")
+count=0
+    } 
+}
+prime()
+  </script>
+  <h4>19.print numbers from 10 100 and number must be even?</h4>
+  <script>
+    function evenprime(){
+    let count=0
+    let i,j
+    for(j=2;j<=100;j++){
+        for(i=1;i<=j;i++){
+            if(j%i==0 && j%2==0)
+            count++
+        }   
+    if(count==2)
+    document.write(j + " ")
+count=0
+    } 
+}
+evenprime()
+  </script>
+  <h4>20.print number from 1 to 100 and number must be odd?</h4>
+  <script>
+    function oddprime(){
+    let count=0
+    let i,j
+    for(j=2;j<=100;j++){
+        for(i=1;i<=j;i++){
+            if(j%i==0 && j%2!=0)
+            count++
+        }   
+    if(count==2)
+    document.write(j + " ")
+count=0
+    } 
+}
+oddprime()
+  </script>
+
+
+ <h4>21.find the remainder of the given two numbers?</h4>
+ <script>
+    a=23
+    b=10
+    c=a%b
+    document.write(c + " " + "is remainder of two numbers")
+ </script>
+ <h4>22.find the insuranceamount for given amount (assume insure cerateof percentis 20%)</h4>
+ <script>
+    function amount(iamount){
+        document.write(iamount/20 + " " + "is a insuranceamount")
+    }
+    amount(50000)
+ </script>
+ <h4>23.find the current bill for the given number of units (domestic-10rs per unit,indurstial-15rs per unit)</h4>
+ <script>
+    function dunits(units){
+        document.write(units*10 + " " + " current bill for the given number of units for domestic" + "<br> ")
+    }
+    dunits(80)
+
+    function iunits(units){
+        document.write(units*15 + " " + " current bill for the given number of units for indurstial")
+    }
+    iunits(80)
+ </script>
+ <h4>24.find the net salary of the employee for given data?</h4>
+ <script>
+    function netsalary(s,d){
+        document.write(s-d + " " + " is a net salary of the employee for given data")
+    }
+    netsalary(50000,2000)
+ </script>
+ <h4>25.find the Emi for the given amount (rate of interest for Emi is 4%)</h4>
+ <script>
+    function calculateEMI(principal, interestRate, tenureMonths) {
+  const monthlyInterestRate = (interestRate / 12) / 100;
+  const emi = principal * monthlyInterestRate * Math.pow(1 + monthlyInterestRate, tenureMonths) /
+    (Math.pow(1 + monthlyInterestRate, tenureMonths) - 1);
+
+  return emi;
+}
+const emi = calculateEMI(10000,4,12);
+document.write(`EMI:` + emi); 
+
+ </script>
+ <h4>26.find the number of days in the given number of months?</h4>
+ <script>
+    m='february'
+    if(m=='january'||m== 'march'||m== 'may'|| m== 'july' || m== "august" || m== 'october'|| m=='december'){
+        document.write(m + " " + " month has 31 days")
+    }
+    else if(m=='april'|| m== 'june' || m== 'september' || m== 'november'){
+        document.write(m + " " + " month has 30 days")
+    }
+    else if(m=='february'){
+        document.write(m + " " + " month has 28 or 29 days")
+    }
+    else{
+        document.write("enter valid month name")
+
+    }
+ </script>
+ <h4>27.find the number of years for the given number of hours?</h4>
+ <script>
+    function hour(h){
+        if(c=h/8760){
+            document.write(c +" years for the given "+ h+ " hours ")
+        }
+    }
+    hour(8500)
+ </script>
+ <h4>28.find the number of inches for the given meters?</h4>
+ <script>
+    function meters(m){
+        if(c=m*39.37){
+            document.write(c +" inches for the  "+ m+ " meters ")
+        }
+    }
+    meters(10)
+ </script>
+ <h4>29.find the number acres for the given centimetres?</h4>
+ <script>
+    function cm(acres){
+        if(c=acres/40468564.22){
+            document.write(c +" acres for the  "+ acres + " centermeters ")
+        }
+    }
+    cm(40468564.22)
+ </script>
+ <h4>30.for check given data is triangle/square/pentagon based on the number ofsides</h4>
+ <script>
+    function sides(s){
+        if(s==3){
+            document.write(s + " is a triangle")
+        }
+        else if(s==4){
+            document.write(s + " is a square")
+
+        }
+        else if(s==5){
+            document.write(s + " is a pentagon")
+        }
+        else{
+            document.write("enter correct sides")
+        }
+    }
+    sides(4)
+ </script>
+</body>
+</html>
